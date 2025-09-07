@@ -1,16 +1,30 @@
-# poker_probability_calculator
+# Poker Probability Calculator
 
-A new Flutter project.
+A Flutter application that calculates poker hand probabilities using Monte Carlo simulation.
 
-## Getting Started
+## How to Use
 
-This project is a starting point for a Flutter application.
+### Card Input Format
+- Use two-character format: [Rank][Suit]
+- **Ranks**: 2-9, T (10), J (Jack), Q (Queen), K (King), A (Ace)
+- **Suits**: H (Hearts), D (Diamonds), C (Clubs), S (Spades)
+- Examples: 
+  - AS = Ace of Spades
+  - KH = King of Hearts
+  - TD = Ten of Diamonds
 
-A few resources to get you started if this is your first Flutter project:
+### Features
+1. **Player Cards**: Enter your two hole cards
+2. **Number of Players**: Adjust the slider (2-9 players)
+3. **Community Cards**: Enter known community cards (Flop, Turn, River)
+4. **Results Show**:
+   - Your top 3 most likely hands with probabilities
+   - Opponents' top 3 most likely hands with probabilities
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Example
+Input:
+- Your Cards: AH, KH
+- Players: 3
+- Flop: QH, JH, 2C
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The calculator will simulate thousands of possible outcomes to determine hand probabilities.
